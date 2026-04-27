@@ -1,0 +1,11 @@
+{
+  "name": "Calculators",
+  "description": "A high-performance portal for unblocked games, featuring a sleek technical interface and a curated library of top titles.",
+  "requestFramePermissions": [
+    "gamepad"
+  ],
+  "majorCapabilities": [
+    "gaming",
+    "interactive"
+  ]
+}
