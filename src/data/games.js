@@ -1,14 +1,4 @@
-export interface Game {
-  id: string;
-  title: string;
-  description: string;
-  thumbnail: string;
-  url: string;
-  category: 'Action' | 'Sports' | 'Simulation' | 'Puzzle' | 'Arcade' | 'Casual';
-  tags: string[];
-}
-
-export const games: Game[] = [
+export const games = [
   {
     id: 'gladihoppers',
     title: 'Gladihoppers',

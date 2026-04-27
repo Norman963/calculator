@@ -1,13 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
@@ -24,12 +14,12 @@ import {
   Menu,
   X
 } from 'lucide-react';
-import { games, type Game } from './data/games';
+import { games } from './data/games';
 
 export default function App() {
-  const [selectedGame, setSelectedGame] = useState<Game | null>(null);
+  const [selectedGame, setSelectedGame] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState<string>('All');
+  const [activeCategory, setActiveCategory] = useState('All');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const categories = ['All', 'Action', 'Sports', 'Simulation', 'Puzzle', 'Arcade', 'Casual'];
@@ -342,4 +332,3 @@ export default function App() {
     </div>
   );
 }
-
